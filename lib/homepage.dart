@@ -25,6 +25,13 @@ class _ScreenfirstState extends State<Screenfirst> {
             },
             child: Text("Next"),
           ),
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Screensecond()));
+            },
+            child: Text("Next"),
+          ),
         ),
       ),
     );
